@@ -23,7 +23,7 @@ module.exports = [
     activity: BioActivity,
     staffMembers: BiochemistrystaffMember,
     passedHeight: 800,
-    url: "",
+
     url: "/ClinicalBiochemistry",
   },
   {

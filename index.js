@@ -17,6 +17,7 @@ app.get("/api/departments", (req, res) => {
       id: departement.id,
       name: departement.name,
       about: departement.about,
+      url: departement.url,
     };
   });
   res.send(deps);
@@ -38,6 +39,7 @@ app.get("/api/departments/:name", (req, res) => {
       backgroundService: department.backgrounImageService,
       target: department.target,
       about: department.about,
+      units: department.units,
     });
   }
   res.status(404).send("not found");
