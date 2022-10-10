@@ -53,6 +53,8 @@ app.get("/api/departments/:name/:unitName", (req, res) => {
   }
   return res.status(404).send("department not found");
 });
-
+app.get("*", (req, res) => {
+res.send("not found route")} )
+console.log(process.env.PORT);
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
